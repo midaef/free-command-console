@@ -38,7 +38,7 @@ def printwithotstup(s):
 init(autoreset=True)
 printkrasivo('Free Сommand Сonsole[Version: 0.0.1]')
 printkrasivo('(c)NameLess Corp (NameLess Corporation), 2018')
-print('Your user:',getpass.getuser())
+print('Your user: ' + Fore.RED + getpass.getuser())
 
 while True:	
 	vibor = str(input(str(os.getcwd())+' >>>'))
@@ -46,7 +46,7 @@ while True:
 	vibor = vibor.lstrip()
 
 	if vibor == 'help':
-		print('Comands:')
+		print(Fore.RED + 'Comands:')
 		print('       1.system')
 		print('       2.exit')
 		print('       3.open')
@@ -56,12 +56,12 @@ while True:
 		print('       7.checknet')
 		print('       8.wintools')
 	if vibor == 'system':
-		print('OS name:', platform.system())
-		print('Version:', platform.version())
-		print('Processor name:', platform.processor())
-		print('Machine type:', platform.machine())
-		print('System’s release', platform.release())
-		print('Current directory:',os.getcwd())
+		print('OS name: ' + Fore.RED + platform.system())
+		print('Version: ' + Fore.RED + platform.version())
+		print('Processor name: ' + Fore.RED + platform.processor())
+		print('Machine type: ' + Fore.RED + platform.machine())
+		print('System’s release: ' + Fore.RED + platform.release())
+		print('Current directory: ' + Fore.RED + os.getcwd())
 	if vibor == 'exit':
 		exit()
 	if vibor == 'write command':
