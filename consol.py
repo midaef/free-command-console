@@ -1,4 +1,5 @@
 
+from colorama import init, Fore, Back, Style
 import time
 import random
 import sys
@@ -11,6 +12,8 @@ import requests
 
 #-----------------------------------------------------
 w = 50
+
+
 def printkrasivo(s):
 	s = printwithotstup(s)
 	s = s + '\n'
@@ -31,6 +34,8 @@ def printwithotstup(s):
 	return(otstup * ' ' + s)
 #-----------------------------------------------------
 
+
+init(autoreset=True)
 printkrasivo('Free Сommand Сonsole[Version: 0.0.1]')
 printkrasivo('(c)NameLess Corp (NameLess Corporation), 2018')
 print('Your user:',getpass.getuser())
@@ -102,20 +107,20 @@ while True:
 			req = requests.get(ip)
 			print(req)
 	if vibor == 'wintools':
-		printkrasivo('  ███████   █         █')
-		printkrasivo(' █████████  ██       ██')
-		printkrasivo('███████████ ███████████')
-		printkrasivo('███████████ ███████████')
-		printkrasivo('███████████ ███████████')
-		printkrasivo('██       ██  █████████ ')
-		printkrasivo('█         █   ███████  ')
-		printkrasivo('  ███████   █         █')
-		printkrasivo(' █████████  ██       ██')
-		printkrasivo('███████████ ███████████')
-		printkrasivo('███████████ ███████████')
-		printkrasivo('███████████ ███████████')
-		printkrasivo('██       ██  █████████ ')
-		printkrasivo('█         █   ███████  ')
+		printkrasivo(Fore.RED + '  ███████  ' + Fore.GREEN + ' █         █')
+		printkrasivo(Fore.RED + ' █████████ ' + Fore.GREEN + ' ██       ██')
+		printkrasivo(Fore.RED + '███████████' + Fore.GREEN + ' ███████████')
+		printkrasivo(Fore.RED + '███████████' + Fore.GREEN + ' ███████████')
+		printkrasivo(Fore.RED + '███████████' + Fore.GREEN + ' ███████████')
+		printkrasivo(Fore.RED + '██       ██' + Fore.GREEN + '  █████████ ')
+		printkrasivo(Fore.RED + '█         █' + Fore.GREEN + '   ███████  ')
+		printkrasivo(Fore.BLUE + '  ███████  ' + Fore.YELLOW + ' █         █')
+		printkrasivo(Fore.BLUE + ' █████████ ' + Fore.YELLOW + ' ██       ██')
+		printkrasivo(Fore.BLUE + '███████████' + Fore.YELLOW + ' ███████████')
+		printkrasivo(Fore.BLUE + '███████████' + Fore.YELLOW + ' ███████████')
+		printkrasivo(Fore.BLUE + '███████████' + Fore.YELLOW + ' ███████████')
+		printkrasivo(Fore.BLUE + '██       ██' + Fore.YELLOW + '  █████████ ')
+		printkrasivo(Fore.BLUE + '█         █' + Fore.YELLOW + '   ███████  ')
 		print()
 		printkrasivo('WinTools by NameLess')
 
