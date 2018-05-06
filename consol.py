@@ -47,14 +47,14 @@ while True:
 
 	if vibor == 'help':
 		print('Comands:')
-		print('1.system')
-		print('2.exit')
-		print('3.open')
-		print('4.write command')
-		print('5.info')
-		print('6.cls')
-		print('7.checknet')
-		print('8.wintools')
+		print('       1.system')
+		print('       2.exit')
+		print('       3.open')
+		print('       4.write command')
+		print('       5.info')
+		print('       6.cls')
+		print('       7.checknet')
+		print('       8.wintools')
 	if vibor == 'system':
 		print('OS name:', platform.system())
 		print('Version:', platform.version())
