@@ -46,7 +46,7 @@ while True:
 	vibor = vibor.lstrip()
 
 	if vibor == 'help':
-		print(Fore.RED + 'Comands:')
+		print(Fore.RED + 'Commands:')
 		print('       1.system')
 		print('       2.exit')
 		print('       3.open')
@@ -65,11 +65,11 @@ while True:
 	if vibor == 'exit':
 		exit()
 	if vibor == 'write command':
-		com = str(input('Input our name command:'))
+		com = str(input('Input name of command:'))
 		f = open(com + '.py', 'w')
 
 		while True:
-			f.write(input('Input our code: ') + '\n')
+			f.write(input('Input code: ') + '\n')
 			if input('next? ') != 'y':
 				break
 
@@ -106,6 +106,7 @@ while True:
 		for i in range(0, 4):
 			req = requests.get(ip)
 			print(req)
+
 	if vibor == 'wintools':
 		printkrasivo(Fore.RED + '  ███████  ' + Fore.GREEN + ' █         █')
 		printkrasivo(Fore.RED + ' █████████ ' + Fore.GREEN + ' ██       ██')
@@ -138,7 +139,7 @@ while True:
 			if com == 'exit':
 				break	
 			if com == 'tree':
-				d = input('Disc (ex C:) : ')
+				d = input('Drive (ex C:) : ')
 				os.system('tree ' + d + '/')
 			if com == 'color':
 				bg = input('color: ')
