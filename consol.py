@@ -96,6 +96,10 @@ while True:
 		printkrasivo('| |_) | | |  __/\__ \  __/ | | | |_ ')
 		printkrasivo('| .__/|_|  \___||___/\___|_| |_|\__|')
 		printkrasivo('|_|                                 ')
+		printkrasivo()
+		printkrasivo('https://github.com/NameLessCorporation')
+		printkrasivo('https://github.com/stdian')
+		printkrasivo('https://github.com/DanilPresent')
 		input()
 		os.system('cls')
 	if vibor == 'cls':
